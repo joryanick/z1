@@ -1,0 +1,32 @@
+// GoodPrototyping z1 technical notes
+// (c) 2013 Jory Anick, jory@goodprototyping.com
+
+PINS:
+
+A2 - RTC POWER
+notes: turns the real-time clock on and off.  when off, the clock uses the 3v battery.
+
+A3 - BAT+ VSENSOR
+notes: reads the battery level (details to follow)
+
+D3 - SLEEP BTN
+notes: connects to an external button paired to ground to toggle ultra-low-power mode
+
+D4/D5/D6 - RGBLED
+notes: connects to an external common cathode LED.  each pin uses a 360 ohm resistor.
+
+D10 - SPK+
+notes: connects to an external piezo speaker with optional resistor as volume control.
+
+D11 - VID1
+D29 - VID2
+notes: internally forms the TVout connector.
+
+D20/21 - I2C RTC
+notes: internally connects the real-time clock.
+
+D22/24/26/28 - KEYPAD
+notes: connects to external buttons paired to ground.
+
+D30 - RESET
+notes: internally connects to reset, forces a reboot
